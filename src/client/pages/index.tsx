@@ -1,15 +1,18 @@
 import React from 'react';
 import { NextPage } from 'next';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 
 const Home: NextPage = () => {
   return (
-    <div className="row">
-      <div className="col-12">
-        <div className="card">
-          <div className="card-body text-center">Hello World!</div>
-        </div>
-      </div>
-    </div>
+    <Container fluid>
+      <Row>
+        <Col>
+          <Card>
+            <Card.Body>Hello World!</Card.Body>
+          </Card>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

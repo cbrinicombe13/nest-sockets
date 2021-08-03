@@ -12,7 +12,6 @@ export class ChatGateway {
 
   @SubscribeMessage('message')
   handleMessage(@MessageBody() message: string) {
-    console.log(message);
     this.server.emit('message', message);
   }
 }

@@ -28,6 +28,7 @@
     "@nestjs/serve-static": "^2.2.2",
     "@nestjs/websockets": "^8.0.5",
     "@types/socket.io": "^3.0.2",
+    "axios": "^0.21.1",
     "bootstrap": "^5.0.2",
     "next": "^11.0.1",
     "react": "^17.0.2",

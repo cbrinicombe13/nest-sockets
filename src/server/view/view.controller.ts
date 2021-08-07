@@ -6,7 +6,7 @@ import { ViewService } from './view.service';
 export class ViewController {
   constructor(private readonly viewService: ViewService) {}
 
-  @Get('*')
+  @Get(['', '_next*', 'favicon.ico'])
   static(@Req() req: Request, @Res() res: Response) {
     const handle = this.viewService.getNextServer().getRequestHandler();
     handle(req, res);
